@@ -1,0 +1,6 @@
+zensical>=0.0.39
+pytest>=8.4.2
+coverage>=7.13.1
+pytest-cov>=6.2.1
+pylint>=4.0.1
+flake8>=7.1.2
