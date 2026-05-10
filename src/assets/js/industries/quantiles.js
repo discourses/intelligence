@@ -12,7 +12,7 @@ let created = [], active = [], inactive = [];
 
 
 // Counts/Frequencies
-$.getJSON('https://raw.githubusercontent.com/discourses/.github/refs/heads/master/.elements/annum/frequencies.json', function (data) {
+$.getJSON('https://raw.githubusercontent.com/discourses/elements/refs/heads/master/src/industries/patterns/annum/frequencies.json', function (data) {
 
     let source = data['percentages'];
 
@@ -48,7 +48,7 @@ $.getJSON('https://raw.githubusercontent.com/discourses/.github/refs/heads/maste
 
 
 // Generate graphs
-$.getJSON('https://raw.githubusercontent.com/discourses/.github/refs/heads/master/.elements/annum/quantiles/dissolved.json', function (data) {
+$.getJSON('https://raw.githubusercontent.com/discourses/elements/refs/heads/master/src/industries/patterns/annum/quantiles/dissolved.json', function (data) {
 
     // https://api.highcharts.com/highstock/plotOptions.series.dataLabels
     // https://api.highcharts.com/class-reference/Highcharts.Point#.name
