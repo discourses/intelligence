@@ -59,7 +59,8 @@ nav = [
     ]},
     { "INDUSTRIES" = [
         "sections/industries/index.md",
-        "sections/indutries/distributions.md"
+        "sections/industries/distributions.md",
+        "sections/industries/quantiles.md"
     ]}
 ]
 
@@ -83,9 +84,17 @@ extra_css = [
 # Read more: https://zensical.org/docs/customization/#additional-javascript
 extra_javascript = [
     "javascripts/mathjax.js",
+    "javascripts/industries/q-annum.js",
+    "javascripts/library/Quantiles.mjs",
     "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js",
+    "https://code.highcharts.com/stock/highstock.js",
+    "https://code.highcharts.com/stock/modules/exporting.js",
+    "https://code.highcharts.com/stock/modules/data.js",
+    "https://code.highcharts.com/stock/modules/accessibility.js",
+    "https://code.highcharts.com/stock/themes/adaptive.js"
 ]
+
 
 # ----------------------------------------------------------------------------
 # Section for configuring theme options
