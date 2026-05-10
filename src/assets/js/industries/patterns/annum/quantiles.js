@@ -296,6 +296,3 @@ $.getJSON('https://raw.githubusercontent.com/discourses/elements/refs/heads/mast
     });
 
 });
-
-
-
