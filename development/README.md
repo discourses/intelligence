@@ -101,6 +101,7 @@ Questions:
 - [x] Install withm npm and start now? Yes
 
 ```shell
+npm install highcharts
 npm install react-router-dom
 ```
 
