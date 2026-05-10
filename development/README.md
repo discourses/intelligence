@@ -103,6 +103,7 @@ Questions:
 ```shell
 npm install highcharts
 npm install react-router-dom
+npm install @types/jquery
 ```
 
 <br>
