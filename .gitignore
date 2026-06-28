@@ -136,8 +136,4 @@ dist
 
 
 # Exclude
-script.sh
-approve.sh
-.idea
-warehouse
-warehouse-t
+nginx.conf
