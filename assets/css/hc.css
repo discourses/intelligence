@@ -1,0 +1,81 @@
+/* highcharts */
+
+@import url("https://cdn.jsdelivr.net/npm/@highcharts/grid-lite/css/grid-lite.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gafata&display=swap');
+
+
+/* graphs */
+.highcharts-legend-box {
+    width: 265px;
+}
+
+
+/* tables */
+.hcg-container {
+    --ig-default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --hcg-font-size: 13px;
+}
+
+.hcg-container {
+
+    a {
+        color: #696cff;
+        text-decoration: none;
+        font-weight: lighter;
+    }
+
+    a:hover {
+        color: orchid;
+        text-decoration: underline;
+    }
+
+}
+
+.hcg-container {
+    .hcg-table {
+        /* Row borders */
+        --ig-row-border: 0;
+
+        /* Header row borders */
+        --ig-header-row-border: 0;
+
+        /* Column borders */
+        --ig-column-border: 0;
+
+        /* Header column borders */
+        --ig-header-column-border: 0;
+
+        border: 0;
+
+    }
+}
+
+.hcg-pagination-wrapper {
+    margin-top: 25px;
+    margin-left: -125px;
+}
+
+.hcg-credits, .highcharts-light .hcg-credits {
+    display: none;
+}
+
+.hcg-container .hcg-table {
+    > tbody > tr > :where(.hcg-cell) {
+        position: relative;
+        line-height: 1em;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+}
+
+
+/* Case https://cdnjs.com/libraries/highstock, https://cdnjs.com/libraries/highcharts */
+.highcharts-axis-resizer {
+    stroke-width: 1pt;
+    stroke: black;
+}
