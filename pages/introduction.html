@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="/assets/img/automata.png" />
+
+    <link rel="stylesheet" href="/assets/css/master.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="/assets/js/latex.js" defer></script>
+
+    <title>INTRODUCTION</title>
+
+    </head>
+    <body>        
+
+        <div class="grid-container">
+
+            <div class="grid-item"><h1>DISCOURSES</h1></div>
+            <div class="grid-item"></div>
+
+            <div class="grid-item">
+                Explore the parent pages on the left.  The essays, articles, discuss metrics, measures, forecasts, etc., in context; past, present, and plausible futures. Algorithms are discussed in place, or via special pages $\ldots$
+
+                $$\Large{\Sigma}f(x)$$
+            </div>
+            <div class="grid-item">
+                <ul id="sections" class='index'>
+                    <script>
+                    $.getJSON("/assets/architecture/index.json", function(data) {
+                        var cells = "",
+                        elements = document.getElementById('sections');
+                        $.each(data.content, function(k, l){
+                        cells += l.label;
+                        });
+                        cells += "";
+                        elements.innerHTML = cells;
+                    });
+                    </script>
+                </ul>
+            </div>
+
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+
+            <div class="grid-item">
+                Mathematics / Machine Learning / Signal Processing / Probability / Statistics<br>
+                <b><script>document.write(new Date().toUTCString());</script></b>
+            </div>
+            <div class="grid-item"></div>
+
+        </div>
+
+    </body>
+</html>
