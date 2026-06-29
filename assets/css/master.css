@@ -337,7 +337,7 @@ optgroup {
 .grid-master-container {
     display: grid;
     grid-template-columns: 5fr;
-    grid-template-rows: 100px auto 300px auto;
+    grid-template-rows: 100px auto 600px auto;
     background-color: #FFFFFF;
     padding-top: 5px;
     padding-left: 85px;
