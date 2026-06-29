@@ -1,8 +1,8 @@
 /* index */
 table.index {
-    border-spacing: 11px;
+    border-spacing: 0 11px;
     border: 0;
-    margin-left: 5px;
+    margin-left: 9px;
     margin-top: 25px;
     table-layout: fixed;
     width: 90%;
@@ -104,8 +104,8 @@ table.open {
     border-collapse: separate;
     border-spacing: 0 17px;
     border: 0;
-    margin-left: 0;
-    margin-top: 25px;
+    margin-left: 11px;
+    margin-top: 5px;
     table-layout: fixed;
     width: 90%;
     text-wrap: wrap;
