@@ -156,12 +156,11 @@ dfn {
 }
 
 h1 {
-    font-size: 2em;
-    margin: 0.67em 0
+    font-variant: small-caps;
+    font-weight: 900;
 }
 
 h2 {
-    font-family: Montserrat, sans-serif;
     font-variant: small-caps;
     font-weight: 800;
 }
@@ -310,7 +309,7 @@ optgroup {
 .grid-container {
     display: grid;
     grid-template-columns: 5fr 1fr;
-    grid-template-rows: auto auto 300px auto;
+    grid-template-rows: 100px auto 300px auto;
     background-color: #FFFFFF;
     padding: 50px;
     align-content: flex-start;
@@ -318,6 +317,24 @@ optgroup {
 }
 
 .grid-item {
+    border: 0 solid;
+    padding: 20px;
+    text-align: left;
+}
+
+.grid-master-container {
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-template-rows: 100px auto 300px auto;
+    background-color: #FFFFFF;
+    padding-top: 5px;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 85px;
+    align-content: flex-start;
+}
+
+.grid-master-item {
     border: 0 solid;
     padding: 20px;
     text-align: left;
@@ -335,4 +352,55 @@ optgroup {
 
 .index-header-text {
     font-variant: small-caps;
+}
+
+
+/* badge */
+.badge {
+    display: block;
+    margin: 0 0 10px 10px; /* top right bottom left */
+    padding: 10px 20px; /* top & bottom, right & left */
+    border: 1px solid #0f0f0f;
+    background: #0f0f0f;
+    color: #ffffff;
+    text-decoration: none;
+    width: min-content;
+}
+
+.epigraph {
+    display: block;
+    margin: 0 0 10px 0;
+    padding: 0 20px 10px 10px;
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+.entre {
+    a {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0 10px 0 10px;
+        padding: 10px 10px 10px 10px;
+        border: 0;
+        background: #eeeeee;
+        text-decoration: none;
+        font-variant: small-caps;
+        min-width: 100px;
+        height: 100px;
+    }
+    a:link {
+        color: #000000;
+        text-decoration: none;
+    }
+    a:hover {
+        background: #000000;
+        color: #ffffff;
+        text-decoration-line: underline;
+        text-decoration-color: #ffffff;
+    }
+    a:visited {
+        color: #a09d9d;
+        text-decoration: none;
+    }
 }
