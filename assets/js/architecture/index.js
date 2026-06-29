@@ -1,5 +1,5 @@
 
-fetch('/assets/architecture/test.json')
+fetch('/assets/architecture/index.json')
         .then(response => response.json())
         .then(data => {
             // Call function to display table
