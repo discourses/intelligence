@@ -4,7 +4,7 @@
             "a": "<a href='/pages/introduction.html' class='note'>Background<span>A set of background measures/estimates, e.g., deflator series, aiding comprehension.</span></a>",
             "b": "<a href='/pages/tc/index.html' class='note'>Trade & Companies<span>A suite of metrics, forecasts, etc.</span></a>",
             "c": "<a href='' class='note'>Banking, etc.<span>Banking services & accessibility, credit allocation, and economic impacts.</span></a>",
-            "e": "<a href='' class='note'>Government: Local & Central<span>Including capital investment, public services, local government remit & finance, etc.</span></a>"
+            "e": "<a href='' class='note'>Government Expenditure<span>Local & Central: Including capital investment, public services, local government remit & finance, etc.</span></a>"
         }
     ]
 }
