@@ -1,5 +1,16 @@
 {
-  "content": [
-    {"label": "<li><a href='background.html' data-title='background measures/estimates'>Background</a></li><li><a href='trade-and-companies.html'>Trade & Companies</a></li><li><a href='banking.html' data-title='banking, credit allocation, and economic impacts'>Banking, etc.</a></li>"}
+  "details": [
+    {
+      "section": "<a href='/pages/introduction.html' data-title='background measures/estimates'>Background</a>"
+    },
+    {
+      "section": "<a href='/pages/tc/index.html'>Trade & Companies</a>"
+    },
+    {
+      "section": "<a href='' data-title='banking, credit allocation, and economic impacts'>Banking, etc.</a>"
+    },
+    {
+      "section": "<a href='' data-title='capital investment, pensions, public services'>government spending</a>"
+    }
   ]
 }
