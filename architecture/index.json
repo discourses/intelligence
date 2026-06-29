@@ -1,10 +1,13 @@
 {
     "details": [
         {
-            "a": "<a href='/pages/introduction.html' class='note'>Background<span>A set of background measures/estimates, e.g., deflator series, aiding comprehension.</span></a>",
-            "b": "<a href='/pages/tc/index.html' class='note'>Trade & Companies<span>A suite of metrics, forecasts, etc.</span></a>",
-            "c": "<a href='' class='note'>Banking, etc.<span>Banking services & accessibility, credit allocation, and economic impacts.</span></a>",
-            "e": "<a href='' class='note'>Expenditure<span>Local & Central Government: Including capital investment, public services, local government remit & finance, etc.</span></a>"
+            "a": "<a href='/pages/introduction.html' class='note'>Introduction<span>Introductory Notes</span></a>",
+            "b": "<a href='/pages/background/index.html' class='note'>Background<span>A set of background measures/estimates, e.g., deflator series, aiding comprehension.</span></a>",
+            "c": "<a href='/pages/tc/index.html' class='note'>Trade & Companies<span>A suite of metrics, forecasts, etc.</span></a>",
+            "e": "<a href='' class='note'>Banking, etc.<span>Banking services & accessibility, credit allocation, and economic impacts.</span></a>",
+            "f": "<a href='' class='note'>Expenditure<span>Local & Central Government: Including capital investment, public services, local government remit & finance, etc.</span></a>",
+            "h": "<a href='' class='note'>Articles<span>Articles, essays, discussing findings.</span></a>",
+            "i": "<a href='' class='note'>People<span>Authors, etc.</span></a>"
         }
     ]
 }
