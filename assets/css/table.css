@@ -20,7 +20,7 @@ table.index {
         background: #eeeeee;
         text-decoration: none;
         font-variant: small-caps;
-        min-width: 50px;
+        width: 125px;
         height: 50px;
         -webkit-transition: color .2s ease-in-out;
         transition: color .2s ease-in-out
