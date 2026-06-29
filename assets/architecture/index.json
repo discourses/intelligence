@@ -4,7 +4,7 @@
       "section": "<a href='/pages/introduction.html' data-title='background measures/estimates'>Background</a>"
     },
     {
-      "section": "<a href='/pages/tc/index.html'>Trade & Companies</a>"
+      "section": "<a href='/pages/tc/index.html' class='note'>Trade & Companies<span>A suite of metrics, forecasts, etc.</span></a>"
     },
     {
       "section": "<a href='' data-title='banking, credit allocation, and economic impacts'>Banking, etc.</a>"
