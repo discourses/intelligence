@@ -1,16 +1,16 @@
 {
   "details": [
     {
-      "section": "<a href='/pages/introduction.html' data-title='background measures/estimates'>Background</a>"
+      "section": "<a href='/pages/introduction.html' class='note'>Background<span>A set of background measures/estimates, e.g., deflator series, aiding comprehension.</span></a>"
     },
     {
       "section": "<a href='/pages/tc/index.html' class='note'>Trade & Companies<span>A suite of metrics, forecasts, etc.</span></a>"
     },
     {
-      "section": "<a href='' data-title='banking, credit allocation, and economic impacts'>Banking, etc.</a>"
+      "section": "<a href='' class='note'>Banking, etc.<span>Banking services & accessibility, credit allocation, and economic impacts.</span></a>"
     },
     {
-      "section": "<a href='' data-title='capital investment, pensions, public services'>government spending</a>"
+      "section": "<a href='' class='note'>Government: Local & Central<span>Including capital investment, public services, local government remit & finance, etc.</span></a>"
     }
   ]
 }
