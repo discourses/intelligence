@@ -1,0 +1,125 @@
+// noinspection ES6ConvertVarToLetConst
+
+var Highcharts;
+
+
+// Generate graphs
+$.getJSON('/architecture/test.json', function (source) {
+
+    let data = source['data'];
+
+
+    // Add the nodes option through an event call. We want to start with the parent
+    // item and apply separate colors to each child element, then the same color to
+    // grandchildren.
+    Highcharts.addEvent(
+        Highcharts.Series,
+        'afterSetOptions',
+        function (e) {
+
+            const colors = Highcharts.getOptions().colors,
+                nodes = {};
+
+            let i = 0;
+
+            if ( this instanceof Highcharts.Series.types.networkgraph && e.options.id === 'industry' ) {
+                e.options.data.forEach(function (link) {
+
+                    if (link[0] === 'sectors') {
+                        nodes['sectors'] = {
+                            id: 'sectors',
+                            marker: {
+                                radius: 18
+                            }
+                        };
+                        nodes[link[1]] = {
+                            id: link[1],
+                            marker: {
+                                radius: link[3]  // 1 + link[1].length
+                            },
+                            color: colors[i++]
+                        };
+                    } else if (nodes[link[0]] && nodes[link[0]].color) {
+                        nodes[link[1]] = {
+                            id: link[1],
+                            color: nodes[link[0]].color
+                        };
+                    }
+                });
+
+                e.options.nodes = Object.keys(nodes).map(function (id) {
+                    return nodes[id];
+                });
+            }
+        }
+    );
+
+
+
+    Highcharts.chart('container', {
+
+        chart: {
+            type: 'networkgraph',
+            width: 850,
+            height: 785
+        },
+
+        title: {
+            text: 'CONTENT',
+            align: 'left'
+        },
+
+        subtitle: {
+            text: 'The content chapters, and a selection of their sections',
+            align: 'left'
+        },
+
+        credits: {
+            enabled: false
+        },
+
+        plotOptions: {
+            networkgraph: {
+                keys: source['columns'],
+                layoutAlgorithm: {
+                    maxIterations: 72,
+                    enableSimulation: true,
+                    friction: -0.9,
+                    gravitationalConstant:
+                        document.getElementById('container').scrollWidth < 500 ?
+                            0.2 : 0.06
+                }
+            }
+        },
+
+        tooltip: {
+            useHTML: true,
+            formatter: function () {
+                const chart = this, point = chart.point;
+                const selectedNode = chart.series.points.find((point) => point.to === chart.point.id);
+                if (selectedNode) {
+                    return selectedNode.from + '&Rarr; ' + selectedNode.name + ' (' + selectedNode.frequency + ')';
+                }
+
+                return '<b>' + source['description'] + '</b><br><b>' + Highcharts.numberFormat(source.frequency, 0, ',') + '</b>';
+            }
+        },
+
+        series: [{
+            accessibility: {
+                enabled: false
+            },
+            dataLabels: {
+                enabled: true,
+                linkFormat: '',
+                style: {
+                    fontSize: '0.8em',
+                    fontWeight: 'normal'
+                }
+            },
+            id: 'industry',
+            data: data
+        }]
+    });
+
+})
