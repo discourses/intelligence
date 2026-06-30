@@ -14,10 +14,27 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
                 integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
                 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
         <script src="/assets/js/library/latex.js" defer></script>
 
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        <script src="https://code.highcharts.com/themes/adaptive.js"></script>
+        <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+
         <title>Introduction</title>
+
+        <style>
+            .highcharts-figure {
+                min-width: 320px;
+                max-width: 1325px;
+                margin: 1em auto; /* top & bottom, right & left */
+            }
+            .highcharts-description {
+                margin: 0.3rem 10px;
+            }
+        </style>
 
     </head>
     <body>
@@ -39,19 +56,20 @@
                         <col style="width: 100%;">
                     </colgroup>
                     <tr><td><div class="page-title">Introduction</h1></div></tr>               
-                    <tr>
-                        <td>
-                            Explore the parent pages on the left.  The essays, articles, discuss metrics, measures, forecasts, etc., in context; past, present, and plausible futures. Algorithms are discussed in place, or via special pages $\ldots$
-
-                            $$\Large{\Sigma}f(x)$$
-
-                            The <a href="/pages/tc/index.html">trade & companies</a> page continuously outlines $\ldots$
-                        </td>                        
-                    </tr>
                 </table>
             </div>
 
-            <div class="grid-master-item"></div>
+            <div class="grid-master-item">
+                <section id="centre">
+                    <script src="/architecture/network.js" type="text/javascript"></script>
+                    <figure class="highcharts-figure">
+                        <div id="container"></div>
+                        <p class="highcharts-description">
+                        This graph illustrates the latest distribution of active companies in the United Kingdom.
+                        </p>
+                    </figure>
+                </section>
+            </div>
 
             <div class="grid-master-item">
                 Mathematics / Machine Learning / Signal Processing / Probability / Statistics<br>
