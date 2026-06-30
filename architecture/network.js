@@ -105,6 +105,10 @@ $.getJSON('/architecture/test.json', function (source) {
             }
         },
 
+        exporting: {
+            enabled: false
+        },
+
         series: [{
             accessibility: {
                 enabled: false
