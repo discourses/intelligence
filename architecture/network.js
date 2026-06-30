@@ -25,9 +25,9 @@ $.getJSON('/architecture/test.json', function (source) {
             if ( this instanceof Highcharts.Series.types.networkgraph && e.options.id === 'industry' ) {
                 e.options.data.forEach(function (link) {
 
-                    if (link[0] === 'content') {
-                        nodes['content'] = {
-                            id: 'content',
+                    if (link[0] === 'CONTENT') {
+                        nodes['CONTENT'] = {
+                            id: 'CONTENT',
                             marker: {
                                 radius: 18
                             }
