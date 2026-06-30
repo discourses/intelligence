@@ -61,7 +61,7 @@ $.getJSON('/architecture/test.json', function (source) {
         chart: {
             type: 'networkgraph',
             width: 850,
-            height: 785
+            height: 585
         },
 
         title: {
