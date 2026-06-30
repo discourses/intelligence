@@ -65,7 +65,7 @@ $.getJSON('/architecture/test.json', function (source) {
         },
 
         title: {
-            text: 'CONTENT',
+            text: '',
             align: 'left'
         },
 
