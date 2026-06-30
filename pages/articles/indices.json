@@ -1,0 +1,65 @@
+{
+    "columns": [
+        "from",
+        "to",
+        "frequency",
+        "percentage",
+        "name",
+        "level",
+        "url",
+        "popup"
+    ],
+    "data": [
+        [
+            "CONTENT",
+            "European Union",
+            1,
+            0,
+            "Distribution of banks across the kingdom, credit allocation, etc.",
+            "chapter",
+            "",
+            false
+        ],
+        [
+            "CONTENT",
+            "Type of Economy",
+            1,
+            0,
+            "Is the United Kingdom a rentier capitalism, covert expropriation, state?",
+            "chapter",
+            "",
+            false
+        ],
+        [
+            "European Union",
+            "Single Market",
+            1,
+            0,
+            "European single market discussions.",
+            "section",
+            "",
+            false
+        ],
+        [
+            "Single Market",
+            "Gains & Losses",
+            1,
+            0,
+            "A study of the impact of the single market; 1992 &Rarr; 2012.",
+            "page",
+            "/pages/articles/integration.html",
+            false
+        ],
+        [
+            "Type of Economy",
+            "By Christophers, Brett",
+            1,
+            0,
+            "The rentierization of the United Kingdom economy",
+            "study",
+            "https://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1378758&dswid=4464",
+            false
+        ]
+    ],
+    "description": "Articles, Essays, Papers"
+}
