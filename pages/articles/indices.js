@@ -14,7 +14,7 @@ $.getJSON('/pages/articles/indices.json', function (source) {
     // symbols
     const symbols = new Map();
     symbols.set("chapter", "circle"), symbols.set("section", "circle"), symbols.set("page", "circle"), 
-    symbols.set("study", "square");
+    symbols.set("study", "square"), symbols("application", "url(/assets/img/application.png)"), symbols("graph", "url(/assets/img/graph.png)");
 
     // And
     let colour = [];
@@ -27,8 +27,7 @@ $.getJSON('/pages/articles/indices.json', function (source) {
         'afterSetOptions',
         function (e) {
 
-            const colors = Highcharts.getOptions().colors,
-                nodes = {};
+            const colors = Highcharts.getOptions().colors, nodes = {};
 
             let i = 0;
 
@@ -38,7 +37,7 @@ $.getJSON('/pages/articles/indices.json', function (source) {
                     if (link[i_url].length === 0) {
                         colour = 'black';
                     } else {
-                        colour = 'orange'
+                        colour = '#F19E39'
                     }
 
                     if (link[0] === 'CONTENT') {
@@ -131,7 +130,7 @@ $.getJSON('/pages/articles/indices.json', function (source) {
                 },
                 marker: {
                     symbol: 'circle'
-                }                
+                }            
             }
         },
 
@@ -144,7 +143,7 @@ $.getJSON('/pages/articles/indices.json', function (source) {
                     return selectedNode.from + '&Rarr; ' + selectedNode.name;
                 }
 
-                return '<b>' + source['description'] + '</b><br><b>';
+                return '<b>' + source['description'] + '</b><br>';
             }
         },
 
