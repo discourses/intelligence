@@ -1,75 +1,3 @@
-/* index */
-table.index {
-    border-spacing: 0 11px;
-    border: 0;
-    margin-left: 9px;
-    margin-top: 25px;
-    table-layout: fixed;
-    width: 90%;
-    text-wrap: wrap;
-    font-size: 13px;
-    font-weight: 500;
-}
-
-.index {
-    a {
-        display: table-cell;
-        text-align: center;
-        vertical-align: middle;
-        margin: 0 10px 0 10px;
-        padding: 10px 10px 10px 10px;
-        border: 0;
-        background: #eeeeee;
-        text-decoration: none;
-        font-variant: small-caps;
-        width: 122px;
-        height: 25px;
-        -webkit-transition: color .2s ease-in-out;
-        transition: color .2s ease-in-out
-    }
-    a:link {
-        color: #000000;
-        font-size: 13px;
-        font-weight: 600;
-        text-decoration: none;
-    }
-    a:hover {
-        background: #000000;
-        color: #ffffff;
-        text-decoration-line: underline;
-        text-decoration-color: #ffffff;
-    }
-    a.note {
-        text-decoration: none;
-    }
-    a.note:hover {
-        cursor: help;
-        position: relative;
-    }
-    a.note span {
-        display: none
-    }
-    a.note:hover span {
-        border: 0;
-        padding: 5px 20px 5px 5px;
-        display: block;
-        z-index: 100;
-        background: #ffffff;
-        color: #000;
-        font-size: 10px;
-        left: 5px;
-        bottom: 25px;
-        position: absolute;
-        margin: 10px;
-        opacity: 0.90;
-        width: 125px;
-        text-align: left;
-        word-wrap: normal;
-        text-decoration: none
-    }
-}
-
-
 
 /* entre */
 table.entre {
@@ -141,6 +69,61 @@ table.open {
         word-wrap: normal;
         text-overflow: ellipsis;
         overflow: hidden;
+    }
+    a {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0 10px 0 10px;
+        padding: 10px 10px 10px 10px;
+        border: 0;
+        background: #eeeeee;
+        text-decoration: none;
+        font-variant: small-caps;
+        width: 122px;
+        height: 25px;
+        -webkit-transition: color .2s ease-in-out;
+        transition: color .2s ease-in-out
+    }
+    a:link {
+        color: #000000;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    a:hover {
+        background: #000000;
+        color: #ffffff;
+        text-decoration-line: underline;
+        text-decoration-color: #ffffff;
+    }
+    a.note {
+        text-decoration: none;
+    }
+    a.note:hover {
+        cursor: help;
+        position: relative;
+    }
+    a.note span {
+        display: none
+    }
+    a.note:hover span {
+        border: 0;
+        padding: 5px 20px 5px 5px;
+        display: block;
+        z-index: 100;
+        background: #ffffff;
+        color: #000;
+        font-size: 10px;
+        left: 5px;
+        bottom: 25px;
+        position: absolute;
+        margin: 10px;
+        opacity: 0.90;
+        width: 125px;
+        text-align: left;
+        word-wrap: normal;
+        text-decoration: none
     }
 }
 
