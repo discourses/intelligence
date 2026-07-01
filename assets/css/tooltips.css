@@ -29,8 +29,6 @@
     left: 0;
     margin-left: 0;
     border-width: 0;
-    /* border-style: solid;
-    border-color: #555 transparent transparent transparent; */
 }
 
 .tooltip:hover .tooltiptext {
