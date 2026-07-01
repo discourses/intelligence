@@ -62,7 +62,7 @@ $.getJSON(url, function (source) {
                         nodes[link[1]] = {
                             id: link[1],
                             marker: {
-                                radius: link[3]  // 1 + link[1].length
+                                radius: 9  // 1 + link[1].length
                             },
                             color: colour
                         };
