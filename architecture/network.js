@@ -38,7 +38,7 @@ $.getJSON('/architecture/network.json', function (source) {
                     if (link[i_url].length === 0) {
                         colour = 'black';
                     } else {
-                        colour = '#F19E39'
+                        colour = '#F19E39';
                     }
 
                     if (link[0] === 'CONTENT') {
@@ -47,7 +47,7 @@ $.getJSON('/architecture/network.json', function (source) {
                             marker: {
                                 radius: 18
                             },
-                            color: colour,
+                            color: 'black',
                             dataLabels: {
                                 verticalAlign: 'middle',
                                 backgroundColor: 'contrast',
