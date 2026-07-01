@@ -6,7 +6,18 @@ var Highcharts;
 // Generate graphs
 $.getJSON('/architecture/network.json', function (source) {
 
-    let data = source['data'];
+    let data = source['data'], keys = source['columns'];
+
+    // key indices
+    let i_level = keys.indexOf('level'), i_url = keys.indexOf('url');
+
+    // symbols
+    const symbols = new Map();
+    symbols.set("chapter", "circle"), symbols.set("section", "circle"), symbols.set("page", "circle"), 
+    symbols.set("study", "square"), symbols.set("application", "url(/assets/img/application.png)"), symbols.set("graph", "url(/assets/img/graph.png)");
+
+    // And
+    let colour = [];
 
 
     // Add the nodes option through an event call. We want to start with the parent
@@ -17,19 +28,32 @@ $.getJSON('/architecture/network.json', function (source) {
         'afterSetOptions',
         function (e) {
 
-            const colors = Highcharts.getOptions().colors,
-                nodes = {};
+            const colors = Highcharts.getOptions().colors, nodes = {};
 
             let i = 0;
 
-            if ( this instanceof Highcharts.Series.types.networkgraph && e.options.id === 'industry' ) {
+            if ( this instanceof Highcharts.Series.types.networkgraph && e.options.id === 'chapter' ) {
                 e.options.data.forEach(function (link) {
+
+                    if (link[i_url].length === 0) {
+                        colour = 'black';
+                    } else {
+                        colour = '#F19E39'
+                    }
 
                     if (link[0] === 'CONTENT') {
                         nodes['CONTENT'] = {
                             id: 'CONTENT',
                             marker: {
                                 radius: 18
+                            },
+                            color: colour,
+                            dataLabels: {
+                                verticalAlign: 'middle',
+                                backgroundColor: 'contrast',
+                                style: {
+                                    textOutline: 'none'
+                                }
                             }
                         };
                         nodes[link[1]] = {
@@ -37,12 +61,16 @@ $.getJSON('/architecture/network.json', function (source) {
                             marker: {
                                 radius: link[3]  // 1 + link[1].length
                             },
-                            color: colors[i++]
+                            color: colour
                         };
                     } else if (nodes[link[0]] && nodes[link[0]].color) {
                         nodes[link[1]] = {
                             id: link[1],
-                            color: nodes[link[0]].color
+                            marker: {
+                                symbol: symbols.get(link[i_level]),
+                                lineWidth: 0
+                            },
+                            color: colour // nodes[link[0]].color
                         };
                     }
                 });
@@ -88,6 +116,21 @@ $.getJSON('/architecture/network.json', function (source) {
                     gravitationalConstant:
                         document.getElementById('container').scrollWidth < 500 ?
                             0.2 : 0.06
+                },
+                allowPointSelect: true,
+                point: {
+                    events: {
+                        click: function () {
+                            const chart = this, point = chart.point;
+                            const selectedNode = chart.series.points.find((point) => point.to === chart.point.id);
+                            if (selectedNode.url.length > 0) {
+                                window.open(selectedNode.url, 'new', 'popup=' + selectedNode.popup + ',width=495,height=695');
+                            }
+                        }
+                    }
+                },
+                marker: {
+                    symbol: 'circle'
                 }
             }
         },
@@ -98,10 +141,10 @@ $.getJSON('/architecture/network.json', function (source) {
                 const chart = this, point = chart.point;
                 const selectedNode = chart.series.points.find((point) => point.to === chart.point.id);
                 if (selectedNode) {
-                    return selectedNode.from + '&Rarr; ' + selectedNode.name + ' (' + selectedNode.frequency + ')';
+                    return selectedNode.from + '&Rarr; ' + selectedNode.name;
                 }
 
-                return '<b>' + source['description'] + '</b><br><b>' + Highcharts.numberFormat(source.frequency, 0, ',') + '</b>';
+                return '<b>' + source['description'] + '</b><br>';
             }
         },
 
@@ -113,6 +156,7 @@ $.getJSON('/architecture/network.json', function (source) {
             accessibility: {
                 enabled: false
             },
+            keys: keys,
             dataLabels: {
                 enabled: true,
                 linkFormat: '',
@@ -121,7 +165,7 @@ $.getJSON('/architecture/network.json', function (source) {
                     fontWeight: 'normal'
                 }
             },
-            id: 'industry',
+            id: 'chapter',
             data: data
         }]
     });
