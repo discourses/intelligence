@@ -88,8 +88,8 @@ $.getJSON('/pages/articles/indices.json', function (source) {
 
         chart: {
             type: 'networkgraph',
-            width: 850,
-            height: 585
+            width: 465,
+            height: 465
         },
 
         title: {
