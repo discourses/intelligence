@@ -48,7 +48,7 @@ $.getJSON(url, function (source) {
                         nodes['CONTENT'] = {
                             id: 'CONTENT',
                             marker: {
-                                radius: 18
+                                radius: 20
                             },
                             color: 'black',
                             dataLabels: {
@@ -62,7 +62,7 @@ $.getJSON(url, function (source) {
                         nodes[link[1]] = {
                             id: link[1],
                             marker: {
-                                radius: 9  // 1 + link[1].length
+                                radius: 5
                             },
                             color: colour
                         };
@@ -73,7 +73,7 @@ $.getJSON(url, function (source) {
                                 symbol: symbols.get(link[i_level]),
                                 lineWidth: 0
                             },
-                            color: colour // nodes[link[0]].color
+                            color: colour
                         };
                     }
                 });
@@ -127,7 +127,7 @@ $.getJSON(url, function (source) {
                             const chart = this, point = chart.point;
                             const selectedNode = chart.series.points.find((point) => point.to === chart.point.id);
                             if (selectedNode.url.length > 0) {
-                                window.open(selectedNode.url, selectedNode.to, 'popup=' + selectedNode.popup + ',width=495,height=695');
+                                window.open(selectedNode.url, selectedNode.to, 'popup=' + selectedNode.popup + ',width=' + selectedNode.abscissa + ',height=' + selectedNode.ordinate);
                             }
                         }
                     }
