@@ -7,6 +7,17 @@ var Highcharts;
 $.getJSON('/pages/articles/indices.json', function (source) {
 
     let data = source['data'];
+    let keys = source['columns'];
+
+    // key indices
+    let i_level = keys.indexOf('level');
+
+    // symbols
+    const symbols = new Map();
+    symbols.set("chapter", "circle"), symbols.set("section", "circle"), symbols.set("page", "circle"), 
+    symbols.set("study", "square");
+
+    
 
 
     // Add the nodes option through an event call. We want to start with the parent
@@ -42,6 +53,10 @@ $.getJSON('/pages/articles/indices.json', function (source) {
                     } else if (nodes[link[0]] && nodes[link[0]].color) {
                         nodes[link[1]] = {
                             id: link[1],
+                            marker: {
+                                symbol: symbols.get(link[i_level]),
+                                lineWidth: 0
+                            },
                             color: nodes[link[0]].color
                         };
                     }
@@ -100,8 +115,10 @@ $.getJSON('/pages/articles/indices.json', function (source) {
                             }
                         }
                     }
-                }
-                
+                },
+                marker: {
+                    symbol: 'circle'
+                }                
             }
         },
 
@@ -126,7 +143,7 @@ $.getJSON('/pages/articles/indices.json', function (source) {
             accessibility: {
                 enabled: false
             },
-            keys: source['columns'],
+            keys: keys,
             dataLabels: {
                 enabled: true,
                 linkFormat: '',
