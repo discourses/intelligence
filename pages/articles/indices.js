@@ -6,19 +6,18 @@ var Highcharts;
 // Generate graphs
 $.getJSON('/pages/articles/indices.json', function (source) {
 
-    let data = source['data'];
-    let keys = source['columns'];
+    let data = source['data'], keys = source['columns'];
 
     // key indices
-    let i_level = keys.indexOf('level');
+    let i_level = keys.indexOf('level'), i_url = keys.indexOf('url');
 
     // symbols
     const symbols = new Map();
     symbols.set("chapter", "circle"), symbols.set("section", "circle"), symbols.set("page", "circle"), 
     symbols.set("study", "square");
 
-    
-
+    // And
+    let colour = [];
 
     // Add the nodes option through an event call. We want to start with the parent
     // item and apply separate colors to each child element, then the same color to
@@ -36,19 +35,26 @@ $.getJSON('/pages/articles/indices.json', function (source) {
             if ( this instanceof Highcharts.Series.types.networkgraph && e.options.id === 'chapter' ) {
                 e.options.data.forEach(function (link) {
 
+                    if (link[i_url].length === 0) {
+                        colour = 'black';
+                    } else {
+                        colour = 'orange'
+                    }
+
                     if (link[0] === 'CONTENT') {
                         nodes['CONTENT'] = {
                             id: 'CONTENT',
                             marker: {
                                 radius: 18
-                            }
+                            },
+                            color: colour
                         };
                         nodes[link[1]] = {
                             id: link[1],
                             marker: {
                                 radius: link[3]  // 1 + link[1].length
                             },
-                            color: colors[i++]
+                            color: colour // colors[i++]
                         };
                     } else if (nodes[link[0]] && nodes[link[0]].color) {
                         nodes[link[1]] = {
@@ -57,7 +63,7 @@ $.getJSON('/pages/articles/indices.json', function (source) {
                                 symbol: symbols.get(link[i_level]),
                                 lineWidth: 0
                             },
-                            color: nodes[link[0]].color
+                            color: colour // nodes[link[0]].color
                         };
                     }
                 });
@@ -80,12 +86,12 @@ $.getJSON('/pages/articles/indices.json', function (source) {
         },
 
         title: {
-            text: '',
+            text: 'The content network',
             align: 'left'
         },
 
         subtitle: {
-            text: 'The content chapters, and a selection of their sections',
+            text: 'The content network',
             align: 'left'
         },
 
