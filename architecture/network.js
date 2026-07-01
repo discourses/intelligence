@@ -4,7 +4,7 @@ var Highcharts;
 
 
 // Generate graphs
-$.getJSON('/architecture/test.json', function (source) {
+$.getJSON('/architecture/network.json', function (source) {
 
     let data = source['data'];
 
