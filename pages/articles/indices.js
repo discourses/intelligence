@@ -123,7 +123,7 @@ $.getJSON('/pages/articles/indices.json', function (source) {
                             const chart = this, point = chart.point;
                             const selectedNode = chart.series.points.find((point) => point.to === chart.point.id);
                             if (selectedNode.url.length > 0) {
-                                window.open(selectedNode.url, 'new', 'popup="${selectedNode.popup}",width=495,height=695');
+                                window.open(selectedNode.url, 'new', 'popup=' + selectedNode.popup + ',width=495,height=695');
                             }
                         }
                     }
