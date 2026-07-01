@@ -47,7 +47,14 @@ $.getJSON('/pages/articles/indices.json', function (source) {
                             marker: {
                                 radius: 18
                             },
-                            color: colour
+                            color: colour,
+                            dataLabels: {
+                                verticalAlign: 'middle',
+                                backgroundColor: 'contrast',
+                                style: {
+                                    textOutline: 'none'
+                                }
+                            }
                         };
                         nodes[link[1]] = {
                             id: link[1],
@@ -86,7 +93,7 @@ $.getJSON('/pages/articles/indices.json', function (source) {
         },
 
         title: {
-            text: 'The content network',
+            text: '',
             align: 'left'
         },
 
@@ -134,10 +141,10 @@ $.getJSON('/pages/articles/indices.json', function (source) {
                 const chart = this, point = chart.point;
                 const selectedNode = chart.series.points.find((point) => point.to === chart.point.id);
                 if (selectedNode) {
-                    return selectedNode.from + '&Rarr; ' + selectedNode.name + ' (' + selectedNode.frequency + ')';
+                    return selectedNode.from + '&Rarr; ' + selectedNode.name;
                 }
 
-                return '<b>' + source['description'] + '</b><br><b>' + Highcharts.numberFormat(source.frequency, 0, ',') + '</b>';
+                return '<b>' + source['description'] + '</b><br><b>';
             }
         },
 
