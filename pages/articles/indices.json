@@ -32,23 +32,23 @@
         ],
         [
             "European Union",
-            "Single Market",
+            "European Union Single Market",
             1,
             5,
-            "European single market discussions.",
+            "A brief article about Bertelsmann Stiftung investigation into the impact of European Union Single Market.",
             "section",
-            "",
+            "/pages/articles/integration.html",
             false
         ],
         [
-            "Single Market",
-            "Gains & Losses",
+            "European Union Single Market",
+            "Gains|Losses",
             1,
             5,
-            "A study of the impact of the single market; 1992 &Rarr; 2012.",
-            "page",
-            "/pages/articles/integration.html",
-            false
+            "The impact of single market integration.",
+            "graph",
+            "https://d10nf4iq6yx4sq.cloudfront.net/src/measures/research/integration-gain.html",
+            true
         ],
         [
             "Type of Economy",
