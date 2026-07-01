@@ -14,7 +14,7 @@ $.getJSON('/pages/articles/indices.json', function (source) {
     // symbols
     const symbols = new Map();
     symbols.set("chapter", "circle"), symbols.set("section", "circle"), symbols.set("page", "circle"), 
-    symbols.set("study", "square"), symbols("application", "url(/assets/img/application.png)"), symbols("graph", "url(/assets/img/graph.png)");
+    symbols.set("study", "square"), symbols.set("application", "url(/assets/img/application.png)"), symbols.set("graph", "url(/assets/img/graph.png)");
 
     // And
     let colour = [];
