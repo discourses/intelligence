@@ -1,0 +1,65 @@
+{
+    "columns": [
+        "from",
+        "to",
+        "abscissa",
+        "ordinate",
+        "name",
+        "level",
+        "url",
+        "popup"
+    ],
+    "data": [
+        [
+            "CONTENT",
+            "European Union",
+            1,
+            1,
+            "Distribution of banks across the kingdom, credit allocation, etc.",
+            "chapter",
+            "",
+            false
+        ],
+        [
+            "CONTENT",
+            "Type of Economy",
+            1,
+            1,
+            "Is the United Kingdom a rentier capitalism, covert expropriation, state?",
+            "chapter",
+            "",
+            false
+        ],
+        [
+            "European Union",
+            "European Union Single Market",
+            1,
+            1,
+            "A brief article about Bertelsmann Stiftung investigation into the impact of European Union Single Market.",
+            "section",
+            "/pages/articles/integration.html",
+            false
+        ],
+        [
+            "European Union Single Market",
+            "Gains|Losses",
+            625,
+            525,
+            "The impact of single market integration.",
+            "graph",
+            "https://d10nf4iq6yx4sq.cloudfront.net/src/measures/research/integration-gain.html",
+            true
+        ],
+        [
+            "Type of Economy",
+            "By B Christophers",
+            1,
+            1,
+            "The rentierization of the United Kingdom economy",
+            "study",
+            "https://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1378758&dswid=4464",
+            false
+        ]
+    ],
+    "description": "Articles, Essays, Papers"
+}

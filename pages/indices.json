@@ -1,0 +1,265 @@
+{
+    "columns": [
+        "from",
+        "to",
+        "abscissa",
+        "ordinate",
+        "name",
+        "level",
+        "url",
+        "popup"
+    ],
+    "data": [
+        [
+            "CONTENT",
+            "Banking",
+            1,
+            1,
+            "Distribution of banks across the kingdom, credit allocation, etc.",
+            "chapter",
+            "",
+            false
+        ],
+        [
+            "CONTENT",
+            "Particular Policies & Outcomes",
+            1,
+            1,
+            "Tracing the impacts of decisions, e.g., the privatisation water utilities, zero hours contracts, unproductive lending, etc.",
+            "chapter",
+            "",
+            false
+        ],
+        [
+            "CONTENT",
+            "Expenditure & Outcomes",
+            1,
+            1,
+            "The expenditure, and corresponding outcomes, vis-à-vis local & central government activities.",
+            "chapter",
+            "",
+            false
+        ],
+        [
+            "CONTENT",
+            "Articles, Essays, Papers",
+            1,
+            1,
+            "Articles, essays, papers.",
+            "chapter",
+            "/pages/articles/index.html",
+            false
+        ],
+        [
+            "CONTENT",
+            "State Capacity",
+            1,
+            1,
+            "Measures, metrics, forecasts, etc., outlining the ability of the state to (a) secure the state, (b) enable legal and seamless economic activity, innovation, invention, (c) originate & co&ouml;rdinate underpinning infrastructure, (d) ascertain redress, (e) and more.",
+            "chapter",
+            "",
+            false
+        ],
+        [
+            "CONTENT",
+            "Trade & Companies",
+            1,
+            1,
+            "Trade & Companies",
+            "chapter",
+            "/pages/tc/index.html",
+            false
+        ],
+        [
+            "CONTENT",
+            "Preliminaries",
+            1,
+            1,
+            "A set of measures, definitions, etc, that underpin, or affect the interpretaion of, one or more items.",
+            "chapter",
+            "/pages/preliminaries/index.html",
+            false
+        ],
+        [
+            "CONTENT",
+            "Libraries",
+            1,
+            1,
+            "The proliferation, and closure/disappearance, of libraries over time.",
+            "chapter",
+            "",
+            false
+        ],
+        [
+            "CONTENT",
+            "About",
+            1,
+            1,
+            "About the hub, authors, etc.",
+            "chapter",
+            "/pages/about/index.html",
+            false
+        ],
+        [
+            "Expenditure & Outcomes",
+            "Defence",
+            1,
+            1,
+            "The United Kingdom's defence",
+            "section",
+            "",
+            false
+        ],
+        [
+            "Expenditure & Outcomes",
+            "Education",
+            1,
+            1,
+            "Education",
+            "section",
+            "",
+            false
+        ],
+		[
+            "Expenditure & Outcomes",
+            "Local | Central",
+            1,
+            1,
+            "Local and central government spending & remits across time",
+            "section",
+            "",
+            false
+        ],
+        [
+            "Trade & Companies",
+            "Distribution of active companies",
+            995,
+            825,
+            "The distribution of active companies by vis-a-vis the United Kingdom's Standard Industrial Classification (2007)",
+            "application",
+            "https://d10nf4iq6yx4sq.cloudfront.net/application/industries/index.html",
+            true
+        ],
+        [
+            "Trade & Companies",
+            "Trade & Companies: More",
+            1,
+            1,
+            "More &ctdot;",
+            "chapter",
+            "/pages/tc/index.html",
+            false
+        ],
+        [
+            "Articles, Essays, Papers",
+            "Articles, Essays, Papers: More",
+            1,
+            1,
+            "Articles, essays, papers.",
+            "chapter",
+            "/pages/articles/index.html",
+            false
+        ],
+        [
+            "Articles, Essays, Papers",
+            "European Union Single Market",
+            1,
+            1,
+            "A brief article about Bertelsmann Stiftung investigation into the impact of European Union Single Market.",
+            "section",
+            "/pages/articles/integration.html",
+            false
+        ],
+        [
+            "European Union Single Market",
+            "Gains|Losses",
+            625,
+            525,
+            "The impact of single market integration.",
+            "graph",
+            "https://d10nf4iq6yx4sq.cloudfront.net/src/measures/research/integration-gain.html",
+            true
+        ],
+        [
+            "Libraries",
+            "Local",
+            1,
+            1,
+            "Mobile | Volunteer Dependency",
+            "section",
+            "",
+            false
+        ],
+        [
+            "Libraries",
+            "National",
+            1,
+            1,
+            "Residential care activities",
+            "section",
+            "",
+            false
+        ],
+        [
+            "Libraries",
+            "Private",
+            1,
+            1,
+            "Social work activities without accommodation",
+            "section",
+            "",
+            false
+        ],
+        [
+            "Defence",
+            "Investment",
+            1,
+            1,
+            "Investment",
+            "page",
+            "",
+            false
+        ],
+        [
+            "Defence",
+            "Civil",
+            1,
+            1,
+            "The size and remit of the civil service contingent",
+            "page",
+            "",
+            false
+        ],
+        [
+            "Defence",
+            "Procurement",
+            1,
+            1,
+            "Procurement activities; additionally &Rarr; cost of delay, opportunity cost, net present value, return on investment, etc.",
+            "page",
+            "",
+            false
+        ],
+        [
+            "Education",
+            "Tertiary",
+            1,
+            1,
+            "The state of university education",
+            "page",
+            "",
+            false
+        ],
+        [
+            "Education",
+            "Nursery | Preschool",
+            1,
+            1,
+            "Nursery and preschool architecture, co&ouml;rdination, infrastructure",
+            "page",
+            "",
+            false
+        ]
+    ],
+    "description": "In Depth"
+}
