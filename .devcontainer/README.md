@@ -68,9 +68,9 @@ document.getElementById('who').setAttribute(
 
 <br>
 
-`<a class="note">WHO<span>world health organisation</span></a>`
+`<a class="desc">WHO<span>world health organisation</span></a>`
 
-> [abbreviations.css](/assets/css/abbreviations.css) hosts class `note`.
+> [abbreviations.css](/assets/css/abbreviations.css) hosts class `desc`.
 
 <br>
 <br>
