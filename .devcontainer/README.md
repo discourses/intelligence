@@ -48,6 +48,33 @@ docker run --rm -i -t -p 8080:80 -w /app
 <br>
 <br>
 
+### Abbreviations
+
+`<span class="tooltip">WHO<span class="tooltiptext" id="who"></span></span>` &Rarr;
+
+```javascript
+const who = document.getElementById('who');
+who.textContent = 'world health organisation';
+```
+
+<br>
+
+`<a id="who">WHO</a>` &Rarr;
+
+```javascript
+document.getElementById('who').setAttribute(
+  'data-title', 'world health organisation');
+```
+
+<br>
+
+`<a class="note">WHO<span>world health organisation</span></a>`
+
+> [abbreviations.css](/assets/css/abbreviations.css) hosts class `note`.
+
+<br>
+<br>
+
 ### References
 
 NGINX
