@@ -102,8 +102,11 @@ a:active {
     text-decoration: none
 }
 
+
 [data-title] {
     position: relative;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
 }
 
 [data-title]:hover:after {
@@ -117,7 +120,8 @@ a:active {
     display: inline-block;
     width: 65px;
     background-color:#ffffff;
-    font-size: 10px;
+    font-size: 11px;
+    font-variant: small-caps;
     left: 5px;
     bottom: 15px;
     position: absolute;
