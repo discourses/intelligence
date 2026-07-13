@@ -24,6 +24,12 @@ function createFooter(data) {
     colGroup.appendChild(col_a);
     table.appendChild(tableBody);
 
+    // Initially
+    let row = tableBody.insertRow();
+    let cell = row.insertCell();
+    cell.classList.add('open');
+    cell.innerHTML = '<span style="font-variant: small-caps;">In Depth</span> | &copy; ' + new Date().getFullYear().toString();
+
     // Creating table body
     data.forEach(declaration => {
         let row = tableBody.insertRow();
