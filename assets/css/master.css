@@ -315,10 +315,7 @@ optgroup {
     grid-template-columns: 5fr;
     grid-template-rows: 100px auto auto auto;
     background-color: #FFFFFF;
-    padding-top: 5px;
-    padding-left: 85px;
-    padding-right: 85px;
-    padding-bottom: 85px;
+    padding: 5px 85px 5px 85px;
     align-content: flex-start;
 }
 
@@ -338,7 +335,7 @@ optgroup {
     background: #0f0f0f;
     color: #ffffff;
     text-decoration: none;
-    width: min-content;
+    width: 99px;
 
     a {
         color: #ffffff;
@@ -350,7 +347,8 @@ optgroup {
     margin: 0 0 10px 0;
     padding: 0 20px 10px 10px;
     text-decoration: none;
-    color: #4d4d4d;
+    color: #000000;
+    width: 99px;
 }
 
 
