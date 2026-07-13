@@ -17,7 +17,7 @@ $.getJSON(url, function (source) {
     // symbols
     const symbols = new Map();
     symbols.set("chapter", "circle"), symbols.set("section", "circle"), symbols.set("page", "circle"), 
-    symbols.set("study", "square"), symbols.set("application", "url(/assets/img/application.png)"), symbols.set("graph", "url(/assets/img/graph.png)");
+    symbols.set("study", "square"), symbols.set("application", "url(/assets/img/application.png)"), symbols.set("graph", "url(/assets/img/graph.png)"), symbols.set("start", "url(/assets/img/start.png)");
 
     // And
     let colour = [];
@@ -62,16 +62,34 @@ $.getJSON(url, function (source) {
                         nodes[link[1]] = {
                             id: link[1],
                             marker: {
-                                radius: 5
+                                radius: 9
                             },
                             color: colour
+                        };
+                    } else if (link[0] === 'INTRODUCTION') {
+                        nodes['INTRODUCTION'] = {
+                            id: 'INTRODUCTION',
+                            marker: {
+                                symbol: symbols.get(link[i_level]),
+                                radius: 20
+                            },
+                            color: '#F19E39',
+                            dataLabels: {
+                                enabled: false,
+                                verticalAlign: 'top',
+                                backgroundColor: 'contrast',
+                                style: {
+                                    textOutline: 'none'
+                                }
+                            }
                         };
                     } else if (nodes[link[0]] && nodes[link[0]].color) {
                         nodes[link[1]] = {
                             id: link[1],
                             marker: {
                                 symbol: symbols.get(link[i_level]),
-                                lineWidth: 0
+                                lineWidth: 0,
+                                radius: 9
                             },
                             color: colour
                         };
