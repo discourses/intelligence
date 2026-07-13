@@ -342,21 +342,6 @@ optgroup {
     }
 }
 
-.epigraph {
-    display: block;
-    margin: 60px 0 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border: 1px solid #eeeeee;
-    background: #eeeeee;
-    color: #000000;
-    text-decoration: none;
-    width: 120px;
-
-    a {
-        color: #000000;
-    }
-}
-
 
 /* pages */
 #centre {
