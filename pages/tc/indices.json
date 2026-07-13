@@ -99,6 +99,16 @@
             "graph",
             "https://d10nf4iq6yx4sq.cloudfront.net/src/registrations/capita/rpc.html",
             true
+        ],
+        [
+            "INTRODUCTION",
+            "INTRODUCTION",
+            1,
+            1,
+            " ",
+            "start",
+            "/pages/index.html",
+            false
         ]
     ],
     "description": "Trade & Companies"
