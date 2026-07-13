@@ -9,7 +9,7 @@ fetch('/assets/master/addenda.json')
 
 function createFooter(data) {
     const table = document.createElement('table');
-    table.classList.add('open');
+    table.classList.add('page-footer');
     const colGroup = document.createElement('colgroup');
 
     const col_a = document.createElement('col');
@@ -27,7 +27,7 @@ function createFooter(data) {
     // Initially
     let row = tableBody.insertRow();
     let cell = row.insertCell();
-    cell.classList.add('open');
+    cell.classList.add('page-footer');
     cell.innerHTML = '<span style="font-variant: small-caps;">In Depth</span> | &copy; ' + new Date().getFullYear().toString();
 
     // Creating table body
@@ -35,7 +35,7 @@ function createFooter(data) {
         let row = tableBody.insertRow();
         Object.values(declaration).forEach(value => {
             let cell = row.insertCell();
-            cell.classList.add('open');
+            cell.classList.add('page-footer');
             // noinspection JSValidateTypes
             cell.innerHTML = value;
         });
