@@ -1,9 +1,6 @@
 {
   "description": [
     {
-      "section": "<b><span style='font-variant: small-caps;'>In Depth</span> | &copy; <script>document.write(new Date().getFullYear().toString());</script></b><br>"
-    },
-    {
       "section": "<a href='/pages/addenda/about.html' target='_blank' style='font-variant: small-caps;'>ABOUT</a>"
     }
   ]
