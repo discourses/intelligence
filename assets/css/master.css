@@ -335,7 +335,7 @@ optgroup {
     background: #0f0f0f;
     color: #ffffff;
     text-decoration: none;
-    width: 99px;
+    width: 100px;
 
     a {
         color: #ffffff;
@@ -344,11 +344,17 @@ optgroup {
 
 .epigraph {
     display: block;
-    margin: 0 0 10px 0;
-    padding: 0 20px 10px 10px;
-    text-decoration: none;
+    margin: 60px 0 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #eeeeee;
+    background: #eeeeee;
     color: #000000;
-    width: 99px;
+    text-decoration: none;
+    width: 120px;
+
+    a {
+        color: #000000;
+    }
 }
 
 
