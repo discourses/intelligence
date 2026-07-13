@@ -172,6 +172,7 @@ table.page-footer {
     border-collapse: separate;
     border-spacing: 0 17px;
     border: 0;
+    padding-top: 500px;
     margin-left: 7px;
     margin-top: 65px;
     table-layout: fixed;
@@ -183,7 +184,7 @@ table.page-footer {
 .page-footer {
 
     td, th {
-        padding-top: 500px;
+
         padding-bottom: 0;
         padding-right: 0;
         padding-left: 0;
