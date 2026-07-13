@@ -10,7 +10,7 @@ table.entre {
     width: min-content;
     text-wrap: wrap;
     font-size: 13px;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     display: table;
     overflow: hidden;
     
