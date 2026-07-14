@@ -121,26 +121,6 @@
             false
         ],
         [
-            "Trade & Companies",
-            "Distribution of active companies",
-            995,
-            825,
-            "The distribution of active companies by vis-a-vis the United Kingdom's Standard Industrial Classification (2007)",
-            "application",
-            "https://d10nf4iq6yx4sq.cloudfront.net/application/industries/index.html",
-            true
-        ],
-        [
-            "Trade & Companies",
-            "Trade & Companies: More",
-            1,
-            1,
-            "More &ctdot;",
-            "chapter",
-            "/pages/tc/index.html",
-            false
-        ],
-        [
             "Libraries",
             "Local",
             1,
