@@ -118,7 +118,7 @@ $.getJSON(url, function (source) {
             text: '',
             align: 'left'
         },
-        
+
         credits: {
             enabled: false
         },
@@ -179,7 +179,8 @@ $.getJSON(url, function (source) {
                 linkFormat: '',
                 style: {
                     fontSize: '0.8em',
-                    fontWeight: 'normal'
+                    fontWeight: 'lighter',
+                    fontFamily: 'Montserrat'
                 }
             },
             id: 'chapter',
