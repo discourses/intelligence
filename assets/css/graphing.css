@@ -53,14 +53,15 @@
 .hcg-container {
 
     a {
-        color: #696cff;
+        color: #F19E39;
         text-decoration: none;
         font-weight: lighter;
     }
 
     a:hover {
-        color: orchid;
-        text-decoration: underline;
+        color: #F19E39;
+        text-decoration-line: underline;
+        text-decoration-style: dotted;
     }
 
 }
