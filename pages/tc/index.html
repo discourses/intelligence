@@ -14,7 +14,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
             integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/assets/js/library/latex.js" defer></script>
 
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -22,6 +21,8 @@
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <script src="https://code.highcharts.com/themes/adaptive.js"></script>
     <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+
+    <script src="/assets/js/library/latex.js"></script>
 
     <title>Trade & Companies</title>
 
@@ -61,8 +62,13 @@
             </div>
 
             <div class="grid-master-item">
-                Mathematics / Machine Learning / Signal Processing / Probability / Statistics<br>
-                <b><script>document.write(new Date().toUTCString());</script></b>
+                <pre id="desc" url="/pages/tc/desc.json"></pre>
+                <script type="module" src="/assets/js/library/desc.js"></script>
+            </div>
+
+            <div class="grid-master-item">
+                <pre id="footer"></pre>
+                <script type="module" src="/assets/master/addenda.js"></script>
             </div>
 
         </div>
