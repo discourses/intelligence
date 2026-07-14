@@ -1,0 +1,85 @@
+{
+  "columns": [
+    "from",
+    "to",
+    "abscissa",
+    "ordinate",
+    "name",
+    "level",
+    "url",
+    "popup"
+  ],
+  "data": [
+    [
+      "CONTENT",
+      "Companies Register",
+      1,
+      1,
+      "The United Kingdom Companies House register.",
+      "chapter",
+      "",
+      false
+    ],
+    [
+      "Companies Register",
+      "Distribution of active companies",
+      995,
+      825,
+      "The distribution of active companies by vis-a-vis the United Kingdom's Standard Industrial Classification (2007)",
+      "application",
+      "https://d10nf4iq6yx4sq.cloudfront.net/application/industries/index.html",
+      true
+    ],
+    [
+      "Companies Register",
+      "Disaggregates",
+      1,
+      1,
+      "A fork",
+      "section",
+      "",
+      false
+    ],
+    [
+      "Disaggregates",
+      "Registrations by sector",
+      765,
+      615,
+      "The graph illustrates the proportion of businesses created per sector, per annum.",
+      "graph",
+      "https://d10nf4iq6yx4sq.cloudfront.net/src/registrations/inventory/inventory.html",
+      true
+    ],
+    [
+      "Disaggregates",
+      "Registrations per sector divisions",
+      765,
+      600,
+      "Each graph illustrates the proportion of businesses created within a sector, per annum, disaggregated by sector divisions.",
+      "graph",
+      "https://d10nf4iq6yx4sq.cloudfront.net/src/registrations/distributions/as-splines.html",
+      true
+    ],
+    [
+      "Companies Register",
+      "Creation | Dissolution Patterns",
+      600,
+      585,
+      "Answers the questions (a) how many companies were created during the year 1890?, and (b) what proportion of these firms have been dissolved?",
+      "graph",
+      "https://d10nf4iq6yx4sq.cloudfront.net/src/registrations/patterns/percentages.html",
+      true
+    ],
+    [
+      "Companies Register",
+      "Registrations per capita",
+      615,
+      535,
+      "Business registrations per inhabitant, per annum",
+      "graph",
+      "https://d10nf4iq6yx4sq.cloudfront.net/src/registrations/capita/rpc.html",
+      true
+    ]
+  ],
+  "description": "Trade & Companies"
+}
