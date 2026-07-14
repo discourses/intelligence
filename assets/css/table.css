@@ -1,6 +1,39 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-Black.eot");
+    src: local("☺"), url("fonts/Montserrat-Black.woff") format("woff"), url("fonts/Montserrat-Black.ttf") format("truetype"), url("fonts/Montserrat-Black.svg") format("svg");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-Bold.eot");
+    src: local("☺"), url("fonts/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg") format("svg");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-Regular.eot");
+    src: local("☺"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-Light.eot");
+    src: local("☺"), url("fonts/Montserrat-Light.woff") format("woff"), url("fonts/Montserrat-Light.ttf") format("truetype"), url("fonts/Montserrat-Light.svg") format("svg");
+    font-weight: 300;
+    font-style: normal
+}
+
+
+
 /* entre */
 table.entre {
-
     border-spacing: 2px 5px;
     border: 0;
     margin-left: auto;
@@ -13,11 +46,9 @@ table.entre {
     font-family: Montserrat, sans-serif;
     display: table;
     overflow: hidden;
-    
 }
 
 .entre {
-
     a {
         display: table-cell;
         text-align: center;
@@ -31,30 +62,25 @@ table.entre {
         min-width: 100px;
         height: 100px;
     }
-
     a:link {
         color: #000000;
         text-decoration: none;
     }
-
     a:hover {
         background: #000000;
         color: #ffffff;
         text-decoration-line: underline;
         text-decoration-color: #ffffff;
     }
-
     a:visited {
         color: #a09d9d;
         text-decoration: none;
     }
-
     a.note {
         position: relative;
         text-decoration-line: underline;
         text-decoration-style: dotted;
     }
-
     a.note span {
         position: absolute;
         width: 200px;
@@ -66,7 +92,6 @@ table.entre {
         visibility: hidden;
         border-radius: 6px;
     }
-
     a.note span:after {
         content: '';
         position: absolute;
@@ -79,7 +104,6 @@ table.entre {
         border-right: 8px solid transparent;
         border-left: 8px solid transparent;
     }
-
     a:hover.note span {
         border: 0;
         padding: 5px 20px 5px 5px;
@@ -98,46 +122,37 @@ table.entre {
         word-wrap: normal;
         text-decoration: none
     }
-
 }
 
 
 /* Open */
 table.open {
-
     border-collapse: separate;
-    border-spacing: 0 17px;
+    border-spacing: 0 15px;
     border: 0;
     margin-left: 7px;
     margin-top: 0;
     table-layout: fixed;
     width: 100%;
     text-wrap: wrap;
-
+    font-family: "Montserrat", sans-serif;
 }
 
 .open {
-
     td, th {
-        padding-top: 25px;
-        padding-bottom: 0;
-        padding-right: 0;
-        padding-left: 0;
+        padding: 0 0 0 0;
         vertical-align: top;
     }
-
     td {
         word-wrap: normal;
         text-overflow: ellipsis;
         overflow: hidden;
     }
-
 }
 
 
 /* Page Headings */
 table.heading {
-
     border-collapse: separate;
     border-spacing: 0 17px;
     border: 0;
@@ -148,16 +163,13 @@ table.heading {
     text-wrap: wrap;
     font-size: 60px; 
     font-weight: 900;
-
 }
 
 .heading {
-
     td, th {
         padding: 0;
         vertical-align: top;
     }
-
     td {
         word-wrap: normal;
         text-overflow: ellipsis;
@@ -168,7 +180,6 @@ table.heading {
 
 /* Page Footers */
 table.page-footer {
-
     border-collapse: separate;
     border-spacing: 0 17px;
     border: 0;
@@ -178,11 +189,13 @@ table.page-footer {
     table-layout: fixed;
     width: 100%;
     text-wrap: wrap;
-
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    font-variant: small-caps;
+    font-weight: bolder;
 }
 
 .page-footer {
-
     td, th {
 
         padding-bottom: 0;
@@ -190,11 +203,9 @@ table.page-footer {
         padding-left: 0;
         vertical-align: bottom;
     }
-
     td {
         word-wrap: normal;
         text-overflow: ellipsis;
         overflow: hidden;
     }
-
 }
