@@ -98,7 +98,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-    color: #ce534d;
+    color: #F19E39;
     text-decoration: none
 }
 
@@ -140,7 +140,7 @@ abbr[title] {
 .equation::before {
     font-family: Montserrat, sans-serif;
     content: 'Eq.';
-    color: #ce534d;
+    color: #F19E39;
     opacity: 0.95;
     font-weight: 600;
     text-transform: lowercase;
