@@ -118,12 +118,7 @@ $.getJSON(url, function (source) {
             text: '',
             align: 'left'
         },
-
-        subtitle: {
-            text: 'The content chapters, and a selection of their sections',
-            align: 'left'
-        },
-
+        
         credits: {
             enabled: false
         },
