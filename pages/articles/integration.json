@@ -1,0 +1,45 @@
+{
+  "columns": [
+    "from",
+    "to",
+    "abscissa",
+    "ordinate",
+    "name",
+    "level",
+    "url",
+    "popup"
+  ],
+  "data": [
+    [
+      "CONTENT",
+      "Integration",
+      1,
+      1,
+      "An investigation of integration effects",
+      "chapter",
+      "",
+      false
+    ],
+    [
+      "Integration",
+      "Effect",
+      625,
+      525,
+      "The impact of single market integration.",
+      "graph",
+      "https://d10nf4iq6yx4sq.cloudfront.net/src/measures/integration/effects.html",
+      true
+    ],
+    [
+      "Integration",
+      "Gains|Losses",
+      685,
+      525,
+      "The impact of single market integration.",
+      "graph",
+      "https://d10nf4iq6yx4sq.cloudfront.net/src/measures/integration/gain.html",
+      true
+    ]
+  ],
+  "description": "Articles, Essays, Papers"
+}
