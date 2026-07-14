@@ -32,7 +32,7 @@
         ],
         [
             "CONTENT",
-            "Expenditure & Outcomes",
+            "Expenditure",
             1,
             1,
             "The expenditure, and corresponding outcomes, vis-à-vis local & central government activities.",
@@ -91,7 +91,7 @@
             false
         ],
         [
-            "Expenditure & Outcomes",
+            "Expenditure",
             "Defence",
             1,
             1,
@@ -101,7 +101,7 @@
             false
         ],
         [
-            "Expenditure & Outcomes",
+            "Expenditure",
             "Education",
             1,
             1,
@@ -111,7 +111,7 @@
             false
         ],
 		[
-            "Expenditure & Outcomes",
+            "Expenditure",
             "Local | Central",
             1,
             1,
