@@ -15,17 +15,17 @@
             "Banking",
             1,
             1,
-            "Distribution of banks across the kingdom, credit allocation, etc.",
+            "Distribution of banks across the kingdom, credit allocation,  unproductive lending, etc.",
             "chapter",
             "",
             false
         ],
         [
             "CONTENT",
-            "Particular Policies & Outcomes",
+            "Hybrid",
             1,
             1,
-            "Tracing the impacts of decisions, e.g., the privatisation water utilities, zero hours contracts, unproductive lending, etc.",
+            "Tracing the impacts of decisions, e.g., the privatisation water utilities, zero hours contracts, etc.",
             "chapter",
             "",
             false
@@ -51,7 +51,7 @@
             false
         ],
         [
-            "CONTENT",
+            "Hybrid",
             "State Capacity",
             1,
             1,
@@ -81,7 +81,7 @@
             false
         ],
         [
-            "CONTENT",
+            "Hybrid",
             "Libraries",
             1,
             1,
