@@ -52,6 +52,7 @@ $.getJSON(url, function (source) {
                             },
                             color: 'black',
                             dataLabels: {
+                                enabled: false,
                                 verticalAlign: 'middle',
                                 backgroundColor: 'contrast',
                                 style: {
