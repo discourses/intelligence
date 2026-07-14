@@ -137,5 +137,5 @@ dist
 # nginx
 nginx.conf
 
-# initially exclude
-/architecture/network.json
+# exclude
+.idea
