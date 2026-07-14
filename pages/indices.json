@@ -141,36 +141,6 @@
             false
         ],
         [
-            "Articles, Essays, Papers",
-            "Articles, Essays, Papers: More",
-            1,
-            1,
-            "Articles, essays, papers.",
-            "chapter",
-            "/pages/articles/index.html",
-            false
-        ],
-        [
-            "Articles, Essays, Papers",
-            "European Union Single Market",
-            1,
-            1,
-            "A brief article about Bertelsmann Stiftung investigation into the impact of European Union Single Market.",
-            "section",
-            "/pages/articles/integration.html",
-            false
-        ],
-        [
-            "European Union Single Market",
-            "Gains|Losses",
-            625,
-            525,
-            "The impact of single market integration.",
-            "graph",
-            "https://d10nf4iq6yx4sq.cloudfront.net/src/measures/research/integration-gain.html",
-            true
-        ],
-        [
             "Libraries",
             "Local",
             1,
